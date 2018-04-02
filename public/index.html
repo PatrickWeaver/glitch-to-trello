@@ -1,0 +1,104 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Glitch to Trello</title>
+    <meta name="description" content="A cool thing made with Gomix">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/fa8cd597-e539-4144-9541-8ab66aee557c%2Fglitch-to-trello.png?1522608203560" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    
+    <div id="alert-container">
+      <div id="alert">
+        <p class="message">
+        </p>
+      </div>
+    </div>
+    
+    <div id="container">  
+    
+      <header>
+
+        <img id="glitch-trello-logo" src="https://cdn.glitch.com/fa8cd597-e539-4144-9541-8ab66aee557c%2Fglitch-to-trello.png?1522608203560">
+
+        <h1 id="site-title">
+          Glitch to Trello
+        </h1>
+
+      </header>
+
+
+
+
+
+      <p>
+        This project is a first attempt at creating a system for automatically keeping track of <a href="https://glitch.com">Glitch</a> projects in <a href="https://trello.com">Trello</a> using the Glitch API and the Trello API. All it currently can do is create a Trello board using the form below. It is written in <a href="http://coffeescript.org/">CoffeeScript</a> and you can <a href="glitch.com/edit/#!/glitch-to-trello">view the source here</a>. The boards for this proof of concept are created in the <a href="https://trello.com/patrickweaverglitch">PatrickWeaver@Glitch</a> Team on Trello.
+      </p>
+
+      <h3>
+        Create Trello Boards from Glitch Projects:
+      </h3>
+
+      <div id="created-boards">
+        <h4>
+          Trello Boards Created:
+        </h4>
+        <ul id="created-boards-list">
+
+        </ul>
+
+      </div>
+
+      <form id="glitch-project-form">
+        <label>What is the name of one of your Glitch Projects?</label>
+        <input type="text" name="glitchProjectName" id="glitch-project-name" />
+        <button id="glitch-project-submit">
+          🎏 Submit 🎏
+        </button>
+      </form>
+
+      <div id="glitch-api-status">
+
+      </div>
+
+      <ul id="glitch-projects">
+
+      </ul>
+
+
+      <h3>
+        Create a Custom Trello Board:
+      </h3>
+      <form id="create-board-form">
+        <label>Board Name:</label>
+        <input type="text" name="boardName" id="boardName"/>
+        <label>Board Background Color</label>
+        <select name="color" class="background-color">
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="pink">Pink</option>
+          <option value="purple">Purple</option>
+          <option value="sky">Sky Blue</option>
+          <option value="grey">Grey</option>
+          <option value="lime">Lime</option>
+        </select>
+        <button id="create-board-submit">
+          Create Board
+        </button>
+      </form>
+
+
+
+
+      <script src="/client.js"></script>
+    </div>
+  </body>
+</html>
