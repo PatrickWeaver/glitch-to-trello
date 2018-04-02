@@ -1,10 +1,3 @@
-# This client-side CoffeeScript is compiled 
-# by express browserify middleware using the
-# coffeeify transform
-
-hello = require '../modules/coffee-module'
-console.log(hello + ' world :o')
-
 $ = require 'jquery'
 apiUrl = "https://glitch-to-trello.glitch.me/api/create-board"
 
@@ -41,6 +34,7 @@ $( "#glitch-project-submit" ).click( (e) ->
       glitchUserId = pData.users[0].id
       $.get(glitchApiUrl + "users/" + glitchUserId, (uData) ->
         if uData && uData.id
+          setGlitchStatus ""
           projects = uData.projects
           projectsList project for project in projects
         else
