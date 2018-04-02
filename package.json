@@ -1,0 +1,32 @@
+{
+  "name": "coffeescript-example",
+  "version": "0.0.1",
+  "description": "CoffeeScript Example",
+  "main": "server.js",
+  "scripts": {
+    "start": "coffee src/server.coffee"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "coffeescript": "^2.2.4",
+    "body-parser": "^1.18.2",
+    "browserify-middleware": "^8.1.0",
+    "coffeeify": "^3.0.1",
+    "request-promise-native": "^1.0.5",
+    "request": "^2.85.0",
+    "jquery": "^3.3.1"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/coffeescript-pw"
+  },
+  "keywords": [
+    "node",
+    "glitch",
+    "coffeescript",
+    "express"
+  ],
+  "license": "MIT"
+}
