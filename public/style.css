@@ -17,12 +17,19 @@ header {
   display: block;
 }
 
+input, select {
+  line-height: 125%;
+  font-size: 115%;
+}
+
 button {
   background-color: #def;
   border: 1px solid #666;
   border-radius: 5px;
-  padding: 5px;
+  padding: 7px 14px;
   cursor: pointer;
+  font-size: 100%;
+  line-height: 115%;
 }
 
 #site-title {
